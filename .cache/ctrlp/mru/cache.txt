@@ -1,1 +1,4 @@
 /home/bantone/.git/config
+/home/bantone/.zshrc
+/home/bantone/.vimrc
+/home/bantone/.gitconfig

@@ -8,9 +8,9 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:wq!
 :q
 :q!
-:wq!
 
 # Search String History (newest to oldest):
 
@@ -21,125 +21,74 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+"1	LINE	0
 	Unnamed repository; edit this file 'description' to name the repository.
-"-	CHAR	0
-	#
+""-	CHAR	0
+	 
 
 # File marks:
-'0  1  0  ~/.git/config
-'1  5  0  ~/.git/config
-'2  1  0  ~/.git/COMMIT_EDITMSG
-'3  1  758  ~/.ssh/authorized_keys
-'4  1  5  ~/.git/description
-'5  2527  0  ~/.git/COMMIT_EDITMSG
-'6  1  0  ~/.vimrc
-'7  4  0  ~/.vimrc
-'8  26  16  ~/.zshrc
-'9  36  0  ~/.zshrc
+'0  5  0  ~/.git/config
+'1  90  0  ~/.zshrc
+'2  33  0  ~/.vimrc
+'3  1  0  ~/.gitconfig
+'4  11  8  ~/.git/config
+'5  1  0  ~/.git/config
+'6  1  0  ~/.git/COMMIT_EDITMSG
+'7  1  758  ~/.ssh/authorized_keys
+'8  1  5  ~/.git/description
+'9  2527  0  ~/.git/COMMIT_EDITMSG
 
 # Jumplist (newest first):
--'  1  0  ~/.git/config
 -'  5  0  ~/.git/config
+-'  1  0  ~/.git/config
+-'  90  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  33  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  1  0  ~/.gitconfig
+-'  11  8  ~/.git/config
 -'  1  0  ~/.git/COMMIT_EDITMSG
 -'  1  758  ~/.ssh/authorized_keys
 -'  1  5  ~/.git/description
 -'  2527  0  ~/.git/COMMIT_EDITMSG
--'  1  0  ~/.vimrc
 -'  4  0  ~/.vimrc
 -'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
 -'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
+-'  33  0  ~/.vimrc
 -'  1  0  ~/.vimrc
+-'  1  0  ~/.gitconfig
+-'  90  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  33  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  1  0  ~/.gitconfig
+-'  1  0  ~/.git/COMMIT_EDITMSG
+-'  1  758  ~/.ssh/authorized_keys
+-'  1  5  ~/.git/description
+-'  2527  0  ~/.git/COMMIT_EDITMSG
 -'  4  0  ~/.vimrc
 -'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
 -'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
+-'  33  0  ~/.vimrc
 -'  1  0  ~/.vimrc
--'  4  0  ~/.vimrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  1  0  ~/.vimrc
--'  4  0  ~/.vimrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
--'  36  0  ~/.zshrc
--'  26  16  ~/.zshrc
--'  1  0  ~/.zshrc
+-'  1  0  ~/.gitconfig
 
 # History of marks within files (newest to oldest):
 
 > ~/.git/config
+	"	5	0
+	^	11	37
+	.	8	0
+	+	11	8
+	+	8	0
+
+> ~/.zshrc
+	"	90	0
+
+> ~/.vimrc
+	"	33	0
+
+> ~/.gitconfig
 	"	1	0
 
 > ~/.git/COMMIT_EDITMSG
@@ -219,9 +168,3 @@
 	^	1	6
 	.	1	5
 	+	1	5
-
-> ~/.vimrc
-	"	1	0
-
-> ~/.zshrc
-	"	26	16
