@@ -28,17 +28,19 @@
 
 # File marks:
 '0  1  0  ~/.git/config
-'1  1  0  ~/.git/COMMIT_EDITMSG
-'2  1  758  ~/.ssh/authorized_keys
-'3  1  5  ~/.git/description
-'4  2527  0  ~/.git/COMMIT_EDITMSG
-'5  1  0  ~/.vimrc
-'6  4  0  ~/.vimrc
-'7  26  16  ~/.zshrc
-'8  36  0  ~/.zshrc
+'1  5  0  ~/.git/config
+'2  1  0  ~/.git/COMMIT_EDITMSG
+'3  1  758  ~/.ssh/authorized_keys
+'4  1  5  ~/.git/description
+'5  2527  0  ~/.git/COMMIT_EDITMSG
+'6  1  0  ~/.vimrc
+'7  4  0  ~/.vimrc
+'8  26  16  ~/.zshrc
+'9  36  0  ~/.zshrc
 
 # Jumplist (newest first):
 -'  1  0  ~/.git/config
+-'  5  0  ~/.git/config
 -'  1  0  ~/.git/COMMIT_EDITMSG
 -'  1  758  ~/.ssh/authorized_keys
 -'  1  5  ~/.git/description
@@ -134,8 +136,6 @@
 -'  36  0  ~/.zshrc
 -'  26  16  ~/.zshrc
 -'  1  0  ~/.zshrc
--'  1  0  ~/.git/COMMIT_EDITMSG
--'  1  758  ~/.ssh/authorized_keys
 
 # History of marks within files (newest to oldest):
 
