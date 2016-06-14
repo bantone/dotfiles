@@ -1,0 +1,9 @@
+def blabber("a", x=1)
+    if x.odd?
+        puts a.reverse * x 
+    else
+        puts a * x
+    end
+end
+
+blabber("test", 2) 

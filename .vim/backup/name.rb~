@@ -1,0 +1,4 @@
+print "What is your name? "
+$stdout.flush
+name = gets
+puts 'Hi ' + name + '!!!' + name

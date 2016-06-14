@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/antonb2/github/docker/docker'
+let g:netrw_dirhist_2='/Users/antonb2/.vim/bundle/Vundle.vim'

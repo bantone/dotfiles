@@ -1,0 +1,78 @@
+" Personal .vimrc file
+" Always a work in progress.  
+"
+
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+
+" Pathogen Script to Install Additional Plugins
+" NERDTree, Vundle, salt-vim, vim-fugitive, vim-go
+
+execute pathogen#infect()
+
+" Basics {
+    set nocompatible				
+    set encoding=utf-8
+    syntax on
+" }
+
+" General {
+    filetype off
+    filetype plugin indent on 
+    set background=dark
+    set backspace=indent,eol,start
+    set backup				
+    set backupdir=~/.vim/backup
+    set directory=~/.vim/tmp
+    set noerrorbells			
+" }
+
+" Split Navigations {
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+" }
+
+" VIM UI {
+    if version >= 700
+        set cursorcolumn
+        set cursorline
+    endif
+    set incsearch
+    set laststatus=2
+    set linespace=0
+    set matchtime=5
+    set report=0
+    set shortmess=aOstT
+    set showcmd
+    set showmatch
+    set ruler
+    set statusline=%<%h%r%m\ %f%=%-14.(%l,%c%V%)%V\ %P
+" }
+
+" Text Formatting / Layout {
+    if version >= 700
+	    set completeopt=
+    endif
+    set expandtab
+    set formatoptions=lrq	
+    set lbr
+    set wrap
+    set shiftwidth=4
+    set softtabstop=4
+    set tabstop=4
+" }
+"
+" ColorScheme {
+     set t_Co=256 " Expect terminal to support 256 colors
+                 " OSX Terminal does not, use iTerm
+         colorscheme xoria256
+     if version >= 700
+         colorscheme jellybeans
+     else
+         colorscheme oceandeep
+     endif
+" }
+"
+"Autostart NERDTree
+"autocmd vimenter * NERDTree

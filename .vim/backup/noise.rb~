@@ -1,0 +1,25 @@
+module NoisyType
+    def self.annoy
+        puts "A #{self.class.name} is loud!"
+    end
+end
+
+class Neighbor
+    include NoisyType
+        def nextdoor
+            NoisyType.annoy
+        end
+    end
+
+class Jet
+    include NoisyType
+        def F15
+            NoisyType.annoy
+        end
+    end
+
+a = Neighbor.new
+b = Jet.new
+
+puts a
+puts b
