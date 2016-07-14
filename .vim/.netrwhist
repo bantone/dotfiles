@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/antonb2/github/docker/docker'
 let g:netrw_dirhist_2='/Users/antonb2/.vim/bundle/Vundle.vim'
 let g:netrw_dirhist_3='/Users/antonb2/.vim'
+let g:netrw_dirhist_4='/home/sword/.config'
+let g:netrw_dirhist_5='/home/sword/.config/i3'
+let g:netrw_dirhist_6='/home/sword/.urxvt'

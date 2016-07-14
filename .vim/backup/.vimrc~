@@ -1,8 +1,7 @@
 " Personal .vimrc file
 " Always a work in progress.  
 "
-
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim
 
 " Pathogen Script to Install Additional Plugins
 " NERDTree, Vundle, salt-vim, vim-fugitive, vim-go
@@ -21,10 +20,25 @@ execute pathogen#infect()
     set background=dark
     set backspace=indent,eol,start
     set backup				
+    set clipboard=unnamed
     set backupdir=~/.vim/backup
     set directory=~/.vim/tmp
+"    set mouse=a
+"    set mousehide 
     set noerrorbells			
+    set noswapfile
+    set splitbelow
+    set splitright
 " }
+
+" Code Folding {
+set foldmethod=indent
+set foldlevel=99
+
+" Code Folding with spacebar
+nnoremap <space> za 
+"}
+
 
 " Split Navigations {
 nnoremap <C-J> <C-W><C-J>
@@ -32,6 +46,26 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 " }
+
+" Syntastic {
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" }
+
+"Autostart NERDTree
+"autocmd vimenter * NERDTree
+
+" Allow NERDTree to show hidden files
+let NERDTreeShowHidden=1
+
+" CtrlP - files matched are ignored when expanding wildcards
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*.,*/.DS_Store
 
 " VIM UI {
     if version >= 700
@@ -42,6 +76,7 @@ nnoremap <C-H> <C-W><C-H>
     set laststatus=2
     set linespace=0
     set matchtime=5
+    set nu
     set report=0
     set shortmess=aOstT
     set showcmd
@@ -64,15 +99,16 @@ nnoremap <C-H> <C-W><C-H>
 " }
 "
 " ColorScheme {
+" currently rotating between gruvbox, hybrid, jellybeans, 
+" apprentice, phd, Tomorrow-Night
      set t_Co=256 " Expect terminal to support 256 colors
                  " OSX Terminal does not, use iTerm
-         colorscheme xoria256
      if version >= 700
-         colorscheme jellybeans
+"         colorscheme jellybeans
+         colorscheme hybrid
      else
          colorscheme oceandeep
      endif
 " }
 "
-"Autostart NERDTree
-"autocmd vimenter * NERDTree
+

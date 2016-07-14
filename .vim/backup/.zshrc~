@@ -1,2 +1,53 @@
-. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+source ~/.zprofile
+
+CURDIR=`pwd`
+cd ${HOME}
+
+export GITHUB_USER="bantone"
+export EDITOR="vim"
+export TERM="xterm-256color"
+
+# Additional PATH for Python stuff
+PATH="/usr/local/share/python/:$PATH"
+
+# Auto Completion 
+autoload -U compinit && compinit 
+zmodload -i zsh/complist
+
+# ZSH History
+HISTSIZE=2500
+SAVEHIST=$HISTSIZE
+HISTFILE=~/.zsh_history
+
+# Ignore duplicate lines in history
+setopt HIST_IGNORE_DUPS
+
+# Append history
+setopt INC_APPEND_HISTORY
+
+# Share history between screen sessions
+setopt SHARE_HISTORY
+
+# Ignores lines starting with spaces
+setopt HIST_IGNORE_SPACE
+
+# setopt HIST_NO_STORE
+
+# Time of history and how long it ran
+setopt EXTENDED_HISTORY
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_FIND_NO_DUPS
+
+# setopt AUTO_CD
+
+# Some custom zsh specific keybindings
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+bindkey "^[a" beginning-of-line
+bindkey "^[e" end-of-line
+
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
 
