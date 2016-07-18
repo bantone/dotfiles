@@ -10,7 +10,7 @@ URxvt.background: rgba:1111/1111/1111/dddd
 !enable pseudo-transparency/opacity
 !URxvt.background:[80]Black
 URxvt.transparent: true
-URxvt.shading: 35
+URxvt.shading: 25
 URxvt.inheritPixmap: true
 
 !URxvt.borderLess: true
@@ -24,22 +24,21 @@ URxvt.cutchars: "\\ `\"\'()*;<>[]{|}&,=?@^\:"
 Urxvt.secondaryScroll: true    
 URxvt.termName: rxvt-unicode
 
-!Clickable URLs
-URxvt.perl-ext-common : default,font-size,fullscreen,clipboard,url-select,keyboard-select,matcher,vtwheel
-URxvt.urlLauncher:      chromium
+!Perl Extensions (copy/paste, font size, clicklable URLs)
+URxvt.perl-ext-common : clipboard,default,font-size,selection-to-clipboard,url-select,keyboard-select,matcher
+URxvt.urlLauncher:     /usr/bin/chromium
 URxvt.url-select.underline: true
 URxvt.matcher.button:   1
+
+!Copy/Paste
 URxvt.keysym.M-Escape:perl:keyboard-select:activate
 URxvt.keysym.M-c:     perl:clipboard:copy
 URxvt.keysym.M-v:     perl:clipboard:paste
 URxvt.keysym.M-C-v:   perl:clipboard:paste_escaped
+URxvt.keysym.M-u:     perl:url-select:select_next
+URxvt.keysym.M-s:     perl:keyboard-select:search
 
-!Fullscreen keymapping
-URxvt.keysym.F11:           perl:fullscreen:switch
-URxvt.keysym.M-u:           perl:url-select:select_next
-URxvt.keysym.M-s:           perl:keyboard-select:search
-
-!font size
+!Font Size
 URxvt.keysym.C-minus: perl:font-size:decrease
 URxvt.keysym.C-equal: perl:font-size:increase
 
