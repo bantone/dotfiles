@@ -1,9 +1,0 @@
-def divide(a, b)
-        div = a / b
-        puts div
-#    else
-#        raise TypeError 'non numeric character used. please use a number'
-#    end
-end   
-
-divide(10, 2)

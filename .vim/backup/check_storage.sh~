@@ -1,4 +1,0 @@
-df -h | grep -F '/dev/xv' | awk {'sub(/%$/,"",$5); print $1, $5'}
-if [ "+$5" -gt "40" ]; then
-    echo "$1 is at $5"
-fi

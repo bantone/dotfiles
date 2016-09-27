@@ -1,8 +1,0 @@
-def fibonacci(fib)
-    fib = [1, 2, 3, 4, 5].each
-        fib.each_with_object() do
-    fibonacci( n - 1 ) + fibonacci( n - 2 )
-    end
-end 
-
-puts fibonacci
