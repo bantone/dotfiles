@@ -638,7 +638,7 @@ cd ${CURDIR}
 unset CURDIR
 
 # kubectl (Kubernetes) autocomplete
-source <(kubectl completion zsh)  # setup autocomplete in zsh into the current shell
-echo "if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi" >> ~/.zshrc # add autocomplete permanently to your zsh shell
+source <(kubectl completion zsh)  
+echo "if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi" >> ~/.zshrc 
 
 # END RUN CODE
