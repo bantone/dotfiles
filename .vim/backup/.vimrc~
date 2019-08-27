@@ -1,7 +1,7 @@
 " Personal .vimrc file
 " Always a work in progress.  
 "
-set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim
+set rtp+=/Users/bantone/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
 
 " Pathogen Script to Install Additional Plugins
 " NERDTree, Vundle, salt-vim, vim-fugitive, vim-go
@@ -17,28 +17,13 @@ execute pathogen#infect()
 " General {
     filetype off
     filetype plugin indent on 
-    set background=dark
+"    set background=dark
     set backspace=indent,eol,start
     set backup				
-    set clipboard=unnamed
     set backupdir=~/.vim/backup
     set directory=~/.vim/tmp
-"    set mouse=a
-"    set mousehide 
     set noerrorbells			
-    set noswapfile
-    set splitbelow
-    set splitright
 " }
-
-" Code Folding {
-set foldmethod=indent
-set foldlevel=99
-
-" Code Folding with spacebar
-nnoremap <space> za 
-"}
-
 
 " Split Navigations {
 nnoremap <C-J> <C-W><C-J>
@@ -58,15 +43,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " }
 
-"Autostart NERDTree
-"autocmd vimenter * NERDTree
-
-" Allow NERDTree to show hidden files
-let NERDTreeShowHidden=1
-
-" CtrlP - files matched are ignored when expanding wildcards
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*.,*/.DS_Store
-
 " VIM UI {
     if version >= 700
         set cursorcolumn
@@ -76,7 +52,7 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*.,*/.DS_Store
     set laststatus=2
     set linespace=0
     set matchtime=5
-    set nu
+    set number
     set report=0
     set shortmess=aOstT
     set showcmd
@@ -99,16 +75,20 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*.,*/.DS_Store
 " }
 "
 " ColorScheme {
-" currently rotating between gruvbox, hybrid, jellybeans, 
-" apprentice, phd, Tomorrow-Night
      set t_Co=256 " Expect terminal to support 256 colors
-                 " OSX Terminal does not, use iTerm
+                  " OSX Terminal does not, use iTerm
      if version >= 700
-"         colorscheme jellybeans
-         colorscheme hybrid
+         colorscheme iceberg
+"        colorscheme jellybeans
      else
          colorscheme oceandeep
      endif
 " }
-"
+" let g:jellybeans_use_lowcolor_black = 1
+let ayucolor="dark"
 
+
+" NERDTree
+"autocmd vimenter * NERDTree
+"let g:NERDTreeWinSize=20
+"let g:NERDTreeWinPos = "right"

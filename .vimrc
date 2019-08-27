@@ -1,8 +1,7 @@
 " Personal .vimrc file
 " Always a work in progress.  
 "
-
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+set rtp+=/Users/bantone/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
 
 " Pathogen Script to Install Additional Plugins
 " NERDTree, Vundle, salt-vim, vim-fugitive, vim-go
@@ -18,7 +17,7 @@ execute pathogen#infect()
 " General {
     filetype off
     filetype plugin indent on 
-    set background=dark
+"    set background=dark
     set backspace=indent,eol,start
     set backup				
     set backupdir=~/.vim/backup
@@ -53,6 +52,7 @@ let g:syntastic_check_on_wq = 0
     set laststatus=2
     set linespace=0
     set matchtime=5
+    set number
     set report=0
     set shortmess=aOstT
     set showcmd
@@ -76,14 +76,17 @@ let g:syntastic_check_on_wq = 0
 "
 " ColorScheme {
      set t_Co=256 " Expect terminal to support 256 colors
-                 " OSX Terminal does not, use iTerm
-         colorscheme xoria256
+                  " OSX Terminal does not, use iTerm
      if version >= 700
-         colorscheme jellybeans
+         colorscheme one
+"        colorscheme iceberg
+"        colorscheme jellybeans
      else
          colorscheme oceandeep
      endif
 " }
-"
-"Autostart NERDTree
+
+" NERDTree
 "autocmd vimenter * NERDTree
+"let g:NERDTreeWinSize=20
+"let g:NERDTreeWinPos = "right"

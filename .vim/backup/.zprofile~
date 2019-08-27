@@ -1,15 +1,9 @@
 # Personal .zprofile
 
 # Some aliases
-alias ls='ls --color'
+#alias ls='ls --color'
 alias vi='vim'
-alias samurai='ssh -i /Users/antonb2/.ssh/antonb2.02222016 sword@162.242.216.132'
-alias osmc='ssh osmc@192.168.1.173'
-alias odroid='ssh root@192.168.1.186'
-alias antonb2_docker='ssh antonb2@172.29.129.27'
-
 alias dotfiles="ls -a | grep '^\.' | grep --invert-match '\.DS_Store\|\.$'"
-alias vi="vim"
 
 # Extract function for common file formats
 function extract {
