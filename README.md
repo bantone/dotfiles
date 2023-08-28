@@ -5,3 +5,4 @@ Personal Dotfiles of tools I use on a regular basis:
 - tmux
 - urxvt
 - vim
+- alacritty 
